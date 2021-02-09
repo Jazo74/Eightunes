@@ -1,0 +1,62 @@
+.head {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0px;
+    background: linear-gradient(180deg, scale-color($color2, $lightness: -0%), scale-color($color1, $lightness: 0%));
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    margin: 0;
+    justify-content:space-around;
+    color: scale-color($color1, $lightness: 70%);
+    margin-bottom: none;
+    //border-bottom: 1px solid $beige;
+    padding-top: 10px;
+    padding-bottom: none;
+    width: 100%;
+}
+
+// BEM block element modifier
+
+.header__title {
+    font-size: $l-size;
+    //text-shadow: 1px 1px black;
+    margin: 0;
+    margin-top: 10px;
+    color: scale-color($color1, $lightness: -50%);;
+}
+
+.logo {
+    margin: 0;
+    font-size: 60px;
+    color: scale-color($color2, $lightness: 60%);
+}
+
+.header__subtitle {
+    font-size: $s-size;
+    font-weight: 500;
+    margin: 0;
+}
+
+.gap {
+    height: 10px;
+    background: $color4;
+}
+
+@media (min-width: $l-breakpoint) {
+    .header {
+        margin-bottom: $xs-size;
+    }
+
+    .header__title {
+        font-size: $xl-size;
+    }
+
+    .header__subtitle {
+        font-size: $m-size;
+    }
+}

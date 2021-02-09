@@ -1,0 +1,92 @@
+// big button
+.big-button {
+    //border-bottom: .6rem solid darken($beige, 10%);
+    //font-weight: bold;
+    width: 100%;
+    padding: 0;
+    background:    $color1;
+    background: linear-gradient(60deg, scale-color($color1, $lightness: 20%), scale-color($color1, $lightness: 0%));
+    border: none;
+    // border-bottom: 1px solid beige;
+    //background:    linear-gradient(($beige), darken($beige, 10%));
+    //border:        1px solid darken($beige, 50%);
+    //border-radius: 5px;
+    //box-shadow:    0 8px darken($beige, 15%);
+    color:         $color3;
+    text-align:    center;
+    min-height: 60px;
+    border-radius: 15px 30px 30px 15px;
+    display: flex;
+    justify-content: flex-end;
+    justify-self: center;
+    font-family: $font2;
+}
+
+.button-text-div {
+    width: 80%;
+    padding-left: 15px;
+    color: $color3;
+}
+.play-button {
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    margin-right: 13px;
+    border-radius: 20px;
+    border: none;
+    color: $color2;
+    padding-left: 10px;
+    background: $color3;
+}
+
+.big-button:disabled {
+    opacity: .5;
+}
+
+// button
+.button {
+    border: none;
+    color: $color3;
+    padding: 5px;
+}
+
+.button-title {
+    margin: 0;
+    font-size: $s-size;
+    font-weight: 700;
+    padding: 0;
+    text-align: end;
+}
+
+.button-band {
+    margin: 0;
+    margin-top: 7px;
+    font-size: $s-size;
+    font-weight: 700;
+    padding: 0;
+    text-align: start;
+}
+
+// bem
+.button--link {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+@media (min-width: $l-breakpoint) {
+    .big-button {
+        height: 80px;
+        border-radius: 15px 40px 40px 15px;
+    }
+    .button-band {
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+    .play-button {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 20px;
+        top: 50%;
+    }
+}

@@ -1,0 +1,25 @@
+.container {
+    //max-width: 60rem;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px 10px;
+}
+
+@media (min-width: $m-breakpoint) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: $l-breakpoint) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}

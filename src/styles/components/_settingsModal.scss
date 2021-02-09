@@ -1,0 +1,25 @@
+.settings-container {
+    padding: 10px;
+    display: flex;
+    justify-self: center;
+
+}
+
+.settingsModal {
+    background: $color1;
+    color: $color3;
+    outline: none;
+    padding: 0;
+    text-align: center;
+    width: 90%;
+}
+
+.settingsLabel {
+    margin-left: 10px;
+    font-size: $xs-size;
+
+}
+
+.settingsTitle {
+    font-size: $s-size;
+}

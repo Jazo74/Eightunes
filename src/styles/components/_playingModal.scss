@@ -1,0 +1,59 @@
+.ReactModalPortal > div {
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 200ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: $color3;
+    color: $color1;
+    outline: none;
+    padding: 0;
+    text-align: center;
+    width: 95%;
+}
+
+.pre-video-div {
+    display: flex;
+    justify-content: flex-end;
+    background: $color1;
+    padding: 5px;
+}
+
+.bucket-button {
+    background: $color1;
+    width: 40px;
+    height: 40px;
+    color: $color3;
+    border: none;
+    margin-right: 5px;
+}
+
+.video-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden; 
+}
+
+.video-container iframe, .video-container object, .video-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
