@@ -1,8 +1,8 @@
 // Theme 14 colors
-$color1: hsl(253, 57%, 9%);
-$color2: #ad192d;
-$color3: rgb(221, 216, 235);
-$color4: rgb(17, 13, 48);
+// $color1: hsl(253, 57%, 9%);
+// $color2: #ad192d;
+// $color3: rgb(221, 216, 235);
+// $color4: rgb(17, 13, 48);
 
 // Theme 13 colors
 // $color1: hsl(253, 57%, 9%);
@@ -22,17 +22,17 @@ $color4: rgb(17, 13, 48);
 // $color3: rgb(238, 222, 250);
 // $color4: rgb(21, 12, 99);
 
-// Theme 10 colors
+//Theme 10 colors
 // $color1: hsl(253, 80%, 31%);
 // $color2: #ad1920;
 // $color3: rgb(238, 222, 250);
 // $color4: rgb(21, 12, 99);
 
 // Theme 9 colors
-// $color1: hsl(253, 80%, 31%);
-// $color2: #ad196f;
-// $color3: rgb(238, 222, 250);
-// $color4: rgb(21, 12, 99);
+$color1: hsl(253, 80%, 31%);
+$color2: #ad196f;
+$color3: rgb(238, 222, 250);
+$color4: rgb(21, 12, 99);
 
 // Theme 8 colors
 // $color1: hsl(266, 80%, 31%);
@@ -86,15 +86,15 @@ $color4: rgb(17, 13, 48);
 // font sizes
 $xxs-size: 0.8rem;
 $xs-size: 1.2rem;
-$s-size: 1.6rem;
+$s-size: 2rem;
 $m-size: 1.8rem;
 $l-size: 2.4rem;
 $xl-size: 3.2rem;
 $xxl-size: 4.8rem;
 
-$l-breakpoint: 50rem;
-$m-breakpoint: 35rem;
-$s-breakpoint: 15rem;
+$l-breakpoint: 50em;
+$m-breakpoint: 35em;
+$s-breakpoint: 15em;
 
 $font1: 'Audiowide', cursive;
 $font2: 'Amatic SC', cursive;

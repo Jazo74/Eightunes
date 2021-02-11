@@ -1,20 +1,13 @@
 // big button
 .big-button {
-    //border-bottom: .6rem solid darken($beige, 10%);
-    //font-weight: bold;
     width: 100%;
     padding: 0;
-    background:    $color1;
     background: linear-gradient(60deg, scale-color($color1, $lightness: 20%), scale-color($color1, $lightness: 0%));
     border: none;
-    // border-bottom: 1px solid beige;
-    //background:    linear-gradient(($beige), darken($beige, 10%));
-    //border:        1px solid darken($beige, 50%);
-    //border-radius: 5px;
-    //box-shadow:    0 8px darken($beige, 15%);
-    color:         $color3;
+    color: $color3;
     text-align:    center;
     min-height: 60px;
+    height: auto;
     border-radius: 15px 30px 30px 15px;
     display: flex;
     justify-content: flex-end;
@@ -23,19 +16,21 @@
 }
 
 .button-text-div {
-    width: 80%;
-    padding-left: 15px;
+    width: 90%;
     color: $color3;
+    margin: 0;
 }
 .play-button {
+    padding: 0;
+    padding-left: 3px;
     height: 40px;
     width: 40px;
-    margin: 10px;
+    margin: auto;
+    margin-left: 0;
     margin-right: 13px;
     border-radius: 20px;
     border: none;
     color: $color2;
-    padding-left: 10px;
     background: $color3;
 }
 
@@ -52,6 +47,8 @@
 
 .button-title {
     margin: 0;
+    margin-right: 15px;
+    margin-bottom: 7px;
     font-size: $s-size;
     font-weight: 700;
     padding: 0;
@@ -60,6 +57,7 @@
 
 .button-band {
     margin: 0;
+    margin-left: 15px;
     margin-top: 7px;
     font-size: $s-size;
     font-weight: 700;

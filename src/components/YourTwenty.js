@@ -7,7 +7,7 @@ import PlayingModal from './PlayingModal';
 import YearSlider from './YearSlider';
 import Axios from 'axios';
 
-const title = "EighTunes"; //bucketzz
+const title = "Hitzz"; //bucketzz
 const subTitle = "a jukebox app";
 const name = "Zoltán Jármy"
 const serverIP = "18.184.135.174";
@@ -19,8 +19,7 @@ export default class YourTwenty extends React.Component {
         this.handleClearSelectedOption = this.handleClearSelectedOption.bind(this);
         this.openSettings = this.openSettings.bind(this);
         this.closeSettings = this.closeSettings.bind(this);
-        this.rndTwenty = this.rndTwenty.bind(this);
-        this.topTwenty = this.topTwenty.bind(this);
+        this.getSongs = this.getSongs.bind(this);
         this.bandAll = this.bandAll.bind(this);
         this.state = {
             options: props.options,
@@ -28,32 +27,23 @@ export default class YourTwenty extends React.Component {
             settingsOpen: undefined,
             url: undefined,
             list: [],
-            year: "1955"
+            year: "1955",
+            color1: "hsl(253, 80%, 31%)",
+            color2: "#ad1920",
+            color3: "rgb(238, 222, 250)",
+            color4: "rgb(21, 12, 99)",
         };
     }
 
-    rndTwenty(year){
-        const url = `http://${serverIP}:9000/api/songs/rnd/${year}`;
-        //const url = "http://localhost:9000/api/songs/rnd/" + year;
-        
-        Axios.get(url)
-            .then((response) => {
-                this.setState(() => {
-                    return {
-                        
-                        list: response.data
-                    }
-                });
-            })
-            .catch((error) =>{
-                console.log(error);
-            })
-
-    };
-
-    topTwenty(year){
-        const url = `http://${serverIP}:9000/api/songs/top/${year}`;
-        //const url = "http://localhost:9000/api/songs/rnd/" + year;
+    getSongs(year, selection){
+        console.log(selection);
+        let select = "";
+        if (selection === undefined) {
+            select = "rnd"
+        } else {
+            select = selection;
+        }
+        const url = `http://${serverIP}:9000/api/songs/${select}/${year}`;
         Axios.get(url)
             .then((response) => {
                 this.setState(() => {
@@ -98,7 +88,7 @@ export default class YourTwenty extends React.Component {
                 });
             }
         } catch (e) {}
-        this.rndTwenty(this.state.year);
+        this.getSongs(this.state.year);
         
     }
 
@@ -159,7 +149,7 @@ export default class YourTwenty extends React.Component {
             <div className="body-div">
                 <div className="head">
                     <Header title={title} subTitle={subTitle}/>
-                    <YearSlider reqSong={this.rndTwenty} openSettings={this.openSettings}></YearSlider>
+                    <YearSlider reqSong={this.getSongs} openSettings={this.openSettings}></YearSlider>
                     <div className="gap">
                     </div>
                 </div>

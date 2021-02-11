@@ -14,32 +14,28 @@
     justify-content:space-around;
     color: scale-color($color1, $lightness: 70%);
     margin-bottom: none;
-    //border-bottom: 1px solid $beige;
-    padding-top: 10px;
-    padding-bottom: none;
+    padding: 0;
     width: 100%;
 }
 
-// BEM block element modifier
-
 .header__title {
+    width: 65%;
     font-size: $l-size;
-    //text-shadow: 1px 1px black;
     margin: 0;
     margin-top: 10px;
-    color: scale-color($color1, $lightness: -50%);;
+    color: scale-color($color1, $lightness: -50%);
+    text-align: center;
 }
 
 .logo {
+    width: 35%;
+    padding: 0;
     margin: 0;
+    margin-top: 5px;
+    margin-bottom: -20px;
     font-size: 60px;
     color: scale-color($color2, $lightness: 60%);
-}
-
-.header__subtitle {
-    font-size: $s-size;
-    font-weight: 500;
-    margin: 0;
+    text-align: center;
 }
 
 .gap {

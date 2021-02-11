@@ -18,11 +18,12 @@ const PlayingModal = (props) => (
             frameBorder="0">
             </iframe>
         </div>
-        <div className="pre-video-div">
-            <button className="bucket-button"><FontAwesomeIcon icon={faCrown} /></button>
-            <button className="bucket-button"><FontAwesomeIcon icon={faHeart} /></button>
-        </div>
         </Modal>
 );
 
 export default PlayingModal;
+
+// <div className="pre-video-div">
+        //     <button className="bucket-button"><FontAwesomeIcon icon={faCrown} /></button>
+        //     <button className="bucket-button"><FontAwesomeIcon icon={faHeart} /></button>
+        // </div>
