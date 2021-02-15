@@ -1,11 +1,6 @@
 import React from 'react';
-import { faSyncAlt, faCog, faListOl, faSortNumericDown, faRandom, faCaretRight, faCaretLeft } from "@fortawesome/free-solid-svg-icons";
+import { faSortNumericDown, faRandom, faCaretRight, faCaretLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-function show_value(x)
-{
- document.getElementById("year-slider").innerHTML = x;
-}
 
 class YearSlider extends React.Component {
     constructor(props) {
@@ -76,8 +71,8 @@ class YearSlider extends React.Component {
                         <input id="slider" type="range" onChange={this.refreshValue} min="1955" max="2020" step="1" value={this.state.value}></input>
                     </div>
                     <div className="slider-button-div">
-                        <button className="slider-button" onClick={this.changeYearRnd}><FontAwesomeIcon icon={faRandom} /></button>
-                        <button className="slider-button" onClick={this.changeYearTop}><FontAwesomeIcon icon={faSortNumericDown} /></button>
+                        <button className="slider-button bc2" onClick={this.changeYearRnd}><FontAwesomeIcon icon={faRandom} /></button>
+                        <button className="slider-button bc2" onClick={this.changeYearTop}><FontAwesomeIcon icon={faSortNumericDown} /></button>
                     </div>
                 </div>
             </>
@@ -86,3 +81,8 @@ class YearSlider extends React.Component {
 }
 
 export default YearSlider;
+
+// function show_value(x)
+// {
+//  document.getElementById("year-slider").innerHTML = x;
+// }

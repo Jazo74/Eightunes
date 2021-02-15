@@ -82,6 +82,49 @@ $color4: rgb(21, 12, 99);
 // $color3: white;
 // $color4: rgb(188, 212, 245);
 
+$color1_5: scale-color($color1, $lightness: -50%);
+$color12: scale-color($color1, $lightness: 20%);
+$color17: scale-color($color1, $lightness: 70%);
+$color26: scale-color($color2, $lightness: +60%);
+
+.grad1_2 {
+    background: linear-gradient(180deg, $color2, $color1);
+}
+
+.grad12_1 {
+    background: linear-gradient(60deg, $color12, $color1);
+}
+
+.cc17 {
+    color: $color17;
+}
+.cc1_5 {
+    color: $color1_5;
+}
+.cc2 {
+    color: $color2;
+}
+.cc26 {
+    color: $color26;
+}
+.cc3 {
+    color: $color3;
+}
+.bc1 {
+    background-color: $color1;
+}
+.bc12 {
+    background-color: $color12;
+}
+.bc2 {
+    background-color: $color2;
+}
+.bc3 {
+    background-color: $color3;
+}
+.bc4 {
+    background-color: $color4;
+}
 
 // font sizes
 $xxs-size: 0.8rem;

@@ -4,7 +4,6 @@
     padding: 0;
     position: sticky;
     top: 0px;
-    background: linear-gradient(180deg, scale-color($color2, $lightness: -0%), scale-color($color1, $lightness: 0%));
     width: 100%;
 }
 
@@ -12,7 +11,6 @@
     display: flex;
     margin: 0;
     justify-content:space-around;
-    color: scale-color($color1, $lightness: 70%);
     margin-bottom: none;
     padding: 0;
     width: 100%;
@@ -23,7 +21,6 @@
     font-size: $l-size;
     margin: 0;
     margin-top: 10px;
-    color: scale-color($color1, $lightness: -50%);
     text-align: center;
 }
 
@@ -34,13 +31,11 @@
     margin-top: 5px;
     margin-bottom: -20px;
     font-size: 60px;
-    color: scale-color($color2, $lightness: 60%);
     text-align: center;
 }
 
 .gap {
     height: 10px;
-    background: $color4;
 }
 
 @media (min-width: $l-breakpoint) {

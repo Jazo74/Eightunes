@@ -1,5 +1,4 @@
 .footer {
-    background: scale-color($color1,$lightness: +10%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -7,26 +6,10 @@
     width: 100%;
 }
 
-.footer__name {
+.footer__text {
     font-size: $xxs-size;
-    color: $color3;
     margin: 0;
     padding-top: 5px;
+    padding-bottom: 5px;
     display:inline-flex;
-}
-
-.footer__year {
-    font-size: $xxs-size;
-    color: $color3;
-    margin: 0;
-    display:inline-flex;
-    padding-top: 5px;
-}
-
-.theme-button {
-    background: scale-color($color1,$lightness: +10%);
-    border: none;
-    color: $color3;
-    margin: 0;
-    padding: 0;
 }

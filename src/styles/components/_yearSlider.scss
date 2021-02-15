@@ -21,7 +21,7 @@
     text-align: center;
     padding: 0;
     margin: 0;
-    background: $color2;
+    //background: $color2;
     border: none;
     color: $color3;
     border-radius: 5px;
@@ -63,7 +63,7 @@
 
 .slider-label {
     text-align: center;
-    color: scale-color($color1, $lightness: 80%);
+    color: $color17;
     font-size: $m-size;
     font-weight: 700;
     margin-bottom: 0px;
@@ -96,7 +96,7 @@ input[type=range] {
     margin-top: -7px;
     width: 15px;
     height: 15px;
-    background: scale-color($color2, $lightness: +0%);;
+    background: $color3;
     border: 0;
     border-radius: 7px;
     cursor: pointer;
@@ -115,7 +115,7 @@ input[type=range] {
   input[type=range]::-moz-range-thumb {
     width: 15px;
     height: 15px;
-    background: scale-color($color1, $lightness: -10%);;
+    background: $color1;
     border: 0;
     border-radius: 7px;
     cursor: pointer;
@@ -130,17 +130,17 @@ input[type=range] {
     cursor: pointer;
   }
   input[type=range]::-ms-fill-lower {
-    background: scale-color($color1, $lightness: -10%);;
+    background: $color1;
     border: 0;
   }
   input[type=range]::-ms-fill-upper {
-    background: scale-color($color1, $lightness: -10%);;
+    background: $color1;
     border: 0;
   }
   input[type=range]::-ms-thumb {
     width: 15px;
     height: 15px;
-    background: scale-color($color1, $lightness: -10%);;
+    background: $color1;
     border: 0;
     border-radius: 7px;
     cursor: pointer;
@@ -148,10 +148,10 @@ input[type=range] {
     /*Needed to keep the Edge thumb centred*/
   }
   input[type=range]:focus::-ms-fill-lower {
-    background: scale-color($color1, $lightness: -10%);;
+    background: $color1;
   }
   input[type=range]:focus::-ms-fill-upper {
-    background: scale-color($color1, $lightness: -10%);;
+    background: $color1;
   }
   /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
   how to remove the virtical space around the range input in IE*/

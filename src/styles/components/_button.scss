@@ -2,9 +2,7 @@
 .big-button {
     width: 100%;
     padding: 0;
-    background: linear-gradient(60deg, scale-color($color1, $lightness: 20%), scale-color($color1, $lightness: 0%));
     border: none;
-    color: $color3;
     text-align:    center;
     min-height: 60px;
     height: auto;
@@ -17,7 +15,6 @@
 
 .button-text-div {
     width: 90%;
-    color: $color3;
     margin: 0;
 }
 .play-button {
@@ -30,8 +27,6 @@
     margin-right: 13px;
     border-radius: 20px;
     border: none;
-    color: $color2;
-    background: $color3;
 }
 
 .big-button:disabled {
@@ -41,7 +36,6 @@
 // button
 .button {
     border: none;
-    color: $color3;
     padding: 5px;
 }
 
@@ -65,7 +59,6 @@
     text-align: start;
 }
 
-// bem
 .button--link {
     background: none;
     border: none;
