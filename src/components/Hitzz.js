@@ -5,7 +5,7 @@ import Button from './Button';
 import PlayingModal from './PlayingModal';
 import YearSlider from './YearSlider';
 import Axios from 'axios';
-import themeChanger from './themes';
+import { themeChanger, stopIndex} from './themes';
 
 const title = "Hitzz";
 const name = "Zoltán Jármy"
@@ -41,7 +41,12 @@ export default class Hitzz extends React.Component {
 
     componentDidMount() {
             this.getSongs(this.state.year);
-        }
+    }
+    
+    componentDidUpdate(){
+        stopIndex();
+        themeChanger();
+    }
     
     getSongs(year, selection){
         let select = "";
@@ -122,7 +127,7 @@ export default class Hitzz extends React.Component {
         return(
             <div className="body-div">
                 <div className="head grad1_2">
-                    <Header title={title} />
+                    <Header title={title} themeChanger={themeChanger}/>
                     <YearSlider reqSong={this.getSongs} openSettings={this.openSettings}></YearSlider>
                     <div className="gap bc4">
                     </div>
@@ -135,7 +140,6 @@ export default class Hitzz extends React.Component {
                 <PlayingModal url={this.state.url} selectedOption={this.state.selectedOption} handleClearSelectedOption={this.handleClearSelectedOption}/>
                 <div className="footer">
                     <Footer name={name}/>
-                    <button onClick={themeChanger}>Change</button>
                 </div>    
             </div>
         );

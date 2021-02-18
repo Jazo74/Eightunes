@@ -59,9 +59,9 @@ class YearSlider extends React.Component {
             <>
                 <div className="label-div">
                     <div className="slider-label-div">
-                        <button className="year-button" onClick={this.prevYear}><FontAwesomeIcon icon={faCaretLeft} /></button>
-                        <label className="slider-label" htmlFor="slider">from {this.state.value}</label>
-                        <button className="year-button" onClick={this.nextYear}><FontAwesomeIcon icon={faCaretRight} /></button>
+                        <button className="year-button cc3" onClick={this.prevYear}><FontAwesomeIcon icon={faCaretLeft} /></button>
+                        <label className="slider-label cc17" htmlFor="slider">from {this.state.value}</label>
+                        <button className="year-button cc3" onClick={this.nextYear}><FontAwesomeIcon icon={faCaretRight} /></button>
                     </div>
                     <div className="empty">
                     </div>
